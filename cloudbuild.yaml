@@ -36,3 +36,7 @@ steps:
 
 images:
   - 'us-east1-docker.pkg.dev/mythical-runner-457320-d8/eliminar-nest/mi-app-nestjs'
+
+options:
+  logging: CLOUD_LOGGING_ONLY # Esto habilita los registros en Google Cloud Logging.
+  logs_bucket: 'gs://my-cloudbuild-logs-eliminar-nest' # Especifica el bucket donde se almacenarán los logs.
